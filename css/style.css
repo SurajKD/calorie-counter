@@ -1,0 +1,127 @@
+#navbar3 header {
+    background: #00C9A7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar3 h1 {
+    font: normal 3rem 'Playfair Display SC', serif;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 15px;
+}
+
+#navbar3 nav {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navbar3 nav a {
+    color: #ffffff;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+#navbar3 nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform: scaleX(0);
+    background: #333;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+#navbar3 nav a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+#tab {
+    border: 1px solid blue;
+}
+
+h5 {
+    padding: 20px 0 !important;
+    text-align: center;
+    color: white;
+}
+
+#sec1 {
+    min-height: 80vh;
+    background-color: #4D8076;
+}
+
+
+#sec1 h3 {
+    margin: 5vh 0;
+}
+
+tr {
+    margin: 20px 0;
+}
+
+.blue_button {
+    background: none repeat scroll 0 0 #845EC2;
+    border-bottom: 3px solid #251a36;
+    box-shadow: 0px 4px 8px 0px #4b4b4b;
+    border: medium none;
+    border-radius: 0.3em;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 7px 14px;
+}
+
+.blue_button:hover {
+    box-shadow: 0px 0px 0px 0px #4b4b4b;
+}
+
+.card {
+    margin: 20px;
+    min-height: 65vh;
+    background: #C4FCEF !important;
+    box-shadow: 0px 4px 8px 0px #4b4b4b;
+}
+
+.frms input[type="text"],
+[type="password"],
+[type="file"],
+textarea,
+select {
+    background: none repeat scroll 0 0 #fafffe;
+    border: 1px solid #ddd;
+    border-radius: 0.35em;
+    height: 35px;
+    margin: 7px 0 !important;
+    padding: 0 0.5%;
+    width: 99%;
+}
+
+
+#sec2 {
+    background-color: #4D8076;
+}
+
+
+#sec2 table {
+    margin: 30px auto;
+}
+
+@media only screen and (max-width: 650px) {
+    .card {
+        margin: 20px 0;
+    }
+
+    .card table {
+        margin: 0 20px !important;
+    }
+}
